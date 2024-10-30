@@ -21,9 +21,9 @@ const Page = () => {
 
       const configId = data.serverData.configId;
 
-      // startTransition(() => {
-      //   router.push(`/configure/design?id=${configId}`);
-      // });
+      startTransition(() => {
+        router.push(`/configure/design?id=${configId}`);
+      });
     },
     onUploadProgress(p) {
       setUploadProgress(p);
